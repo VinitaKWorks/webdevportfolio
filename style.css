@@ -11,8 +11,16 @@ h1 {
   text-align: center;
 }
 
-h2 {
+.h2-1 {
   text-align: center;
+}
+
+.h2-2 {
+  text-align: left;
+}
+
+h3 {
+  text-align:center;
 }
 
 a {
@@ -22,6 +30,7 @@ a {
 
 a:hover {
   color: black;
+  text-decoration: none;
 }
 
 nav {
@@ -50,19 +59,36 @@ nav span {
 }
 
 .card {
+  width: 30%;
   margin-top: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .home {
   margin-left: 10%;
   margin-right: 10%;
+  text-align: center;
+}
+
+.about-img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .contact{
+  text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.contact2 {
+  text-align: center;
 }
 
 button {
