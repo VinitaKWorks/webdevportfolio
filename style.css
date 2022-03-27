@@ -103,6 +103,10 @@ button {
   margin-bottom: 10px;
 }
 
+a button {
+  color: black;
+}
+
 button:hover {
   background-color: #DFCE6A;
 }
