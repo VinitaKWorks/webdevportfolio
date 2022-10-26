@@ -77,12 +77,22 @@ nav span {
   display: flex;
 }
 
+.about-page {
+  display: flex;
+}
+
+.about1 {
+  flex: 30%;
+  padding: 20px;
+}
+
+.about2 {
+  flex: 70%;
+  padding: 20px;
+}
+
 .about-img {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  object-fit: contain;
 }
 
 .contact{
@@ -132,7 +142,8 @@ img {
 }
 
 .contact-container {
-  width: 30%;
+  width: 60%;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
@@ -142,11 +153,33 @@ img {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
-  
+.contact1, .contact2 {
+  flex: 50%;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  body {
+    text-align: justify;
+  }
+  h1, h2, .h2-1, .h2-2 {
+    text-align: center;
+  }
+  .about-page {
+    display: block;
+  }
+  .about-img {
+    height: 500px;
+  }
   .card {
     display: block;
     width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-container {
     display: block;
     margin-left: auto;
     margin-right: auto;
