@@ -59,12 +59,12 @@ nav span {
 }
 
 .card {
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .home {
@@ -73,8 +73,11 @@ nav span {
   text-align: center;
 }
 
-.main {
-  display: flex;
+.main-image {
+  border: 5px solid #DFCE6A;
+  width: 50%;
+  height: auto;
+  object-fit: contain;
 }
 
 .about-page {
@@ -136,11 +139,6 @@ img {
   object-fit: contain;
 }
 
-.main-image {
-  border: 5px solid #DFCE6A;
-  margin-bottom: 20px;
-}
-
 .contact-container {
   width: 60%;
   display: flex;
@@ -166,18 +164,20 @@ img {
   h1, h2, .h2-1, .h2-2 {
     text-align: center;
   }
+  .main {
+    display: block;
+  }
+  .card {
+    display: block;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .about-page {
     display: block;
   }
   .about-img {
     height: 500px;
-  }
-  .card {
-    display: block;
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
   .contact-container {
     display: block;
