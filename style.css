@@ -1,36 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+ 
 
-body, html {
-  font-family: 'DM Sans', sans-serif;
-  padding: 5px 5px 5px 5px;
-  position: relative;
-  overflow-x: hidden;
-}
-
-h1 {
+ 
+ 
+h1, h2, h3 {
   text-align: center;
-}
-
-.h2-1 {
-  text-align: center;
-}
-
-.h2-2 {
-  text-align: left;
-}
-
-h3 {
-  text-align:center;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  color: black;
-  text-decoration: none;
 }
 
 nav {
@@ -52,59 +26,15 @@ nav a:hover {
   background-color: #FFE699;
   padding: 5px 5px 5px 5px;
 }
-
-nav span {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.home {
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: center;
-}
-
-.main-image {
-  width: 50%;
-  height: auto;
+ 
+img {
   object-fit: contain;
+  max-width: 100%;
 }
 
-.about-page {
-  display: flex;
-}
-
-.about1 {
-  flex: 30%;
-  padding: 20px;
-}
-
-.about2 {
-  flex: 70%;
-  padding: 20px;
-}
-
-.about-img {
-  object-fit: contain;
-}
-
-.contact{
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.contact2 {
-  text-align: center;
+a {
+  color: black;
+  text-decoration: none;
 }
 
 button[class="button"] {
@@ -119,74 +49,68 @@ button[class="button"] {
   margin-bottom: 10px;
 }
 
-a button {
-  color: black;
-}
-
-button:hover {
+button[class="button"]:hover {
   background-color: #DFCE6A;
+  cursor: pointer;
 }
 
-button a:hover {
-  color: black;
+.main {
+  display: flex;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: contain;
+.main div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card {
+  border: 0.5px solid black;
+}
+
+.about-page {
+  display: flex;
+}
+
+.about-page div {
+  padding: 50px;
+}
+
+.about-page div:nth-child(1) {
+  flex: 70%;
+}
+
+.about-page div:nth-child(2) {
+  text-align: justify;
+}
+
+.h2-2 {
+  text-align: left;
 }
 
 .contact-container {
-  width: 60%;
   display: flex;
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-container a:hover {
-  color: #663300;
-  font-weight: bold;
+.contact-container div:nth-child(1) {
+  text-align: justify;
 }
 
-.contact1, .contact2 {
-  flex: 50%;
+.contact-container div {
+  padding: 10px;
 }
 
-
-
-@media only screen and (max-width: 700px) {
-  body {
-    text-align: justify;
-  }
-  h1, h2, .h2-1, .h2-2 {
-    text-align: center;
-  }
-  .main {
-    display: block;
-  }
-  .card {
-    display: block;
+@media only screen and (max-width: 800px) {
+  .card{
     width: auto;
-    margin-left: 10px;
-    margin-right: 10px;
   }
   .about-page {
     display: block;
-  }
-  .about-img {
-    height: 500px;
-  }
-  .contact-container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  card {
-    width: auto;
-  }
-}
