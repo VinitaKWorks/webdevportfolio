@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
- 
 
- 
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'DM Sans', sans-serif;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  overflow-x: hidden;
+}
  
 h1, h2, h3 {
   text-align: center;
